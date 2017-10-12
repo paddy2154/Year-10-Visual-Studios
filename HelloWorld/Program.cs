@@ -8,11 +8,9 @@ namespace HelloWorld
         {
             
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Hello World!");
             Console.WriteLine("Goodbye World!");
-            Console.Beep();
-            Console.Beep(4000, 2000);
             Console.Title = "My Program";
             Console.ReadLine();
         }
