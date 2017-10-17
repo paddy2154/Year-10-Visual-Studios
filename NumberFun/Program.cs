@@ -10,16 +10,18 @@ namespace NumberFun
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Number1 ");
-            float Num1 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Number2");
-            float Num2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter X ");
+            float X = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Y");
+            float Y = float.Parse(Console.ReadLine());
 
-                //Output
-            Console.WriteLine("Number 1 plus Number 2 =" + (Num1 + Num2));
-            Console.WriteLine("Number 1 Times Number 2 =" + (Num1 * Num2));
-            Console.WriteLine("Number 1 Minus Number 2 =" + (Num1 - Num2));
-            Console.WriteLine("Number 1 Divided By Number 2 =" + (Num1 / Num2));
+            //Output
+            Console.WriteLine($"{X} plus {Y} = {(X + Y)}");
+            Console.WriteLine($"{X} Times {Y} = {(X * Y)}");
+            Console.WriteLine($"{X} Minus {Y} = {(X - Y)}");
+            Console.WriteLine($"{X} Divided By {Y} = {(X / Y)}");
+
+
 
                 //Wait At End
             Console.ReadLine();
