@@ -12,15 +12,16 @@ namespace GuessMyNumber
         {
             //Generate Random Number
             Random rnd = new System.Random();
-            int RandomNumber = rnd.Next(1, 101);
+            int RandomNumber = rnd.Next(1, 1000000000);
 
             //Set Guess Number To Out Of Guess Range
             int guess = -1;
-
+            int count = 0;
             //Start Loop
             while (guess != RandomNumber)
             {
                 //Input
+                count++;
                 guess = int.Parse(Console.ReadLine());
 
                 //Selection
@@ -35,8 +36,8 @@ namespace GuessMyNumber
                 else 
                 {
                     Console.WriteLine("Correct");
+                    Console.WriteLine($"You Got It, It Took You {count} Tries");
                 }
-
             }
             //Wait
             Console.ReadKey();
