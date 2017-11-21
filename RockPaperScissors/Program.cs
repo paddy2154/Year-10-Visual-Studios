@@ -16,7 +16,7 @@ namespace RockPaperScissors
 
             while (repeat == true)
             {
-                string result = "draw"
+                string result = "draw";
                 PrintScore(ref UserScore, ref ComputerScore);                       //Print Scores
                 string UserChoice = UserTurn();                                     //User's Turn
                 string ComputerChoice = ComputerTurn();                             //Computer's Turn

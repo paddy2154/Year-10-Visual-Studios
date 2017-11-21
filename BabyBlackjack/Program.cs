@@ -11,7 +11,7 @@ namespace BabyBlackjack
 
         static void Main(string[] args)
         {
-            float money = 20;
+            float money = 1;
             playGame(ref money);
 
         }
